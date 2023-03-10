@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght400;700&family=Nunito+Sans&family=Roboto:wght@400;700&display=swap');
+
+body{
+    background-color: #fafafa!important;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.dosis{
+    font-family: 'Dosis', sans-serif;
+}
+.dosis-700{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700!important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+
+.format-input input{
+    display: none;
+   
+}
+.format-input input:checked + label{
+    background: #3f8cff;
+    color: white;
+    padding: 8px 5px;
+    border-radius: 5px;
+   
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
+
+  }
+  .format-input label {
+    margin: 0 10px;
+    font-family: 'Dosis', sans-serif;
+  }
+  .format-input label:hover {
+    cursor: pointer;
+  }
+
+
+  @media print {
+    @page {
+      size: 80mm 150mm;
+    }
+  }
