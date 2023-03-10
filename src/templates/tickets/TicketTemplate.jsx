@@ -9,7 +9,7 @@ const TicketTemplate = forwardRef(({props}, ref) => {
     }, [])
     
       return (
-        <div ref={ref} className="flex flex-col items-start max-w-[300px] h-auto">
+        <div ref={ref} className="flex flex-col items-start max-w-[300px] h-auto p-2">
                 <img src={process.env.REACT_APP_API_URL + "/images/" + auth.store.profilePicture} alt="Logo" className='max-w-[120px]'/>
                 <div className='flex flex-col justify-start w-full ml-1'>
                     <label className='text-left text-[12px]'>Numero du devis :</label>
